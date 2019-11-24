@@ -1,0 +1,696 @@
+<?php
+
+namespace StructType;
+
+use \WsdlToPhp\PackageBase\AbstractStructBase;
+
+/**
+ * This class stands for MenuPage StructType
+ * @subpackage Structs
+ */
+class MenuPage extends AbstractStructBase
+{
+    /**
+     * The ID
+     * Meta information extracted from the WSDL
+     * - maxOccurs: 1
+     * - minOccurs: 1
+     * @var int
+     */
+    public $ID;
+    /**
+     * The OrgID
+     * Meta information extracted from the WSDL
+     * - maxOccurs: 1
+     * - minOccurs: 1
+     * - nillable: true
+     * @var int
+     */
+    public $OrgID;
+    /**
+     * The PageID
+     * Meta information extracted from the WSDL
+     * - maxOccurs: 1
+     * - minOccurs: 1
+     * - nillable: true
+     * @var int
+     */
+    public $PageID;
+    /**
+     * The Status
+     * Meta information extracted from the WSDL
+     * - maxOccurs: 1
+     * - minOccurs: 1
+     * - nillable: true
+     * @var int
+     */
+    public $Status;
+    /**
+     * The DateCreated
+     * Meta information extracted from the WSDL
+     * - maxOccurs: 1
+     * - minOccurs: 1
+     * - nillable: true
+     * @var string
+     */
+    public $DateCreated;
+    /**
+     * The DateModified
+     * Meta information extracted from the WSDL
+     * - maxOccurs: 1
+     * - minOccurs: 1
+     * - nillable: true
+     * @var string
+     */
+    public $DateModified;
+    /**
+     * The InitiatorID
+     * Meta information extracted from the WSDL
+     * - maxOccurs: 1
+     * - minOccurs: 1
+     * - nillable: true
+     * @var int
+     */
+    public $InitiatorID;
+    /**
+     * The VerifierID
+     * Meta information extracted from the WSDL
+     * - maxOccurs: 1
+     * - minOccurs: 1
+     * - nillable: true
+     * @var int
+     */
+    public $VerifierID;
+    /**
+     * The VerifiedDate
+     * Meta information extracted from the WSDL
+     * - maxOccurs: 1
+     * - minOccurs: 1
+     * - nillable: true
+     * @var string
+     */
+    public $VerifiedDate;
+    /**
+     * The MoveNext
+     * Meta information extracted from the WSDL
+     * - maxOccurs: 1
+     * - minOccurs: 1
+     * - nillable: true
+     * @var bool
+     */
+    public $MoveNext;
+    /**
+     * The NextApproverUserID
+     * Meta information extracted from the WSDL
+     * - maxOccurs: 1
+     * - minOccurs: 1
+     * - nillable: true
+     * @var int
+     */
+    public $NextApproverUserID;
+    /**
+     * The NextApproverRoleID
+     * Meta information extracted from the WSDL
+     * - maxOccurs: 1
+     * - minOccurs: 1
+     * - nillable: true
+     * @var int
+     */
+    public $NextApproverRoleID;
+    /**
+     * The WorkFlowTransactionID
+     * Meta information extracted from the WSDL
+     * - maxOccurs: 1
+     * - minOccurs: 1
+     * - nillable: true
+     * @var int
+     */
+    public $WorkFlowTransactionID;
+    /**
+     * The CreatedBy
+     * Meta information extracted from the WSDL
+     * - maxOccurs: 1
+     * - minOccurs: 0
+     * @var string
+     */
+    public $CreatedBy;
+    /**
+     * The ModifiedBy
+     * Meta information extracted from the WSDL
+     * - maxOccurs: 1
+     * - minOccurs: 0
+     * @var string
+     */
+    public $ModifiedBy;
+    /**
+     * The WorkFlowTransactionIDs
+     * Meta information extracted from the WSDL
+     * - maxOccurs: 1
+     * - minOccurs: 0
+     * @var string
+     */
+    public $WorkFlowTransactionIDs;
+    /**
+     * The RoleMenuPages
+     * Meta information extracted from the WSDL
+     * - maxOccurs: 1
+     * - minOccurs: 0
+     * @var \ArrayType\ArrayOfRoleMenuPage
+     */
+    public $RoleMenuPages;
+    /**
+     * The Organisation
+     * Meta information extracted from the WSDL
+     * - maxOccurs: 1
+     * - minOccurs: 0
+     * @var \StructType\Organisation
+     */
+    public $Organisation;
+    /**
+     * The Page
+     * Meta information extracted from the WSDL
+     * - maxOccurs: 1
+     * - minOccurs: 0
+     * @var \StructType\Page
+     */
+    public $Page;
+    /**
+     * The MenuPages
+     * Meta information extracted from the WSDL
+     * - maxOccurs: 1
+     * - minOccurs: 0
+     * @var \ArrayType\ArrayOfMenuPage
+     */
+    public $MenuPages;
+    /**
+     * Constructor method for MenuPage
+     * @uses MenuPage::setID()
+     * @uses MenuPage::setOrgID()
+     * @uses MenuPage::setPageID()
+     * @uses MenuPage::setStatus()
+     * @uses MenuPage::setDateCreated()
+     * @uses MenuPage::setDateModified()
+     * @uses MenuPage::setInitiatorID()
+     * @uses MenuPage::setVerifierID()
+     * @uses MenuPage::setVerifiedDate()
+     * @uses MenuPage::setMoveNext()
+     * @uses MenuPage::setNextApproverUserID()
+     * @uses MenuPage::setNextApproverRoleID()
+     * @uses MenuPage::setWorkFlowTransactionID()
+     * @uses MenuPage::setCreatedBy()
+     * @uses MenuPage::setModifiedBy()
+     * @uses MenuPage::setWorkFlowTransactionIDs()
+     * @uses MenuPage::setRoleMenuPages()
+     * @uses MenuPage::setOrganisation()
+     * @uses MenuPage::setPage()
+     * @uses MenuPage::setMenuPages()
+     * @param int $iD
+     * @param int $orgID
+     * @param int $pageID
+     * @param int $status
+     * @param string $dateCreated
+     * @param string $dateModified
+     * @param int $initiatorID
+     * @param int $verifierID
+     * @param string $verifiedDate
+     * @param bool $moveNext
+     * @param int $nextApproverUserID
+     * @param int $nextApproverRoleID
+     * @param int $workFlowTransactionID
+     * @param string $createdBy
+     * @param string $modifiedBy
+     * @param string $workFlowTransactionIDs
+     * @param \ArrayType\ArrayOfRoleMenuPage $roleMenuPages
+     * @param \StructType\Organisation $organisation
+     * @param \StructType\Page $page
+     * @param \ArrayType\ArrayOfMenuPage $menuPages
+     */
+    public function __construct($iD = null, $orgID = null, $pageID = null, $status = null, $dateCreated = null, $dateModified = null, $initiatorID = null, $verifierID = null, $verifiedDate = null, $moveNext = null, $nextApproverUserID = null, $nextApproverRoleID = null, $workFlowTransactionID = null, $createdBy = null, $modifiedBy = null, $workFlowTransactionIDs = null, \ArrayType\ArrayOfRoleMenuPage $roleMenuPages = null, \StructType\Organisation $organisation = null, \StructType\Page $page = null, \ArrayType\ArrayOfMenuPage $menuPages = null)
+    {
+        $this
+            ->setID($iD)
+            ->setOrgID($orgID)
+            ->setPageID($pageID)
+            ->setStatus($status)
+            ->setDateCreated($dateCreated)
+            ->setDateModified($dateModified)
+            ->setInitiatorID($initiatorID)
+            ->setVerifierID($verifierID)
+            ->setVerifiedDate($verifiedDate)
+            ->setMoveNext($moveNext)
+            ->setNextApproverUserID($nextApproverUserID)
+            ->setNextApproverRoleID($nextApproverRoleID)
+            ->setWorkFlowTransactionID($workFlowTransactionID)
+            ->setCreatedBy($createdBy)
+            ->setModifiedBy($modifiedBy)
+            ->setWorkFlowTransactionIDs($workFlowTransactionIDs)
+            ->setRoleMenuPages($roleMenuPages)
+            ->setOrganisation($organisation)
+            ->setPage($page)
+            ->setMenuPages($menuPages);
+    }
+    /**
+     * Get ID value
+     * @return int
+     */
+    public function getID()
+    {
+        return $this->ID;
+    }
+    /**
+     * Set ID value
+     * @param int $iD
+     * @return \StructType\MenuPage
+     */
+    public function setID($iD = null)
+    {
+        // validation for constraint: int
+        if (!is_null($iD) && !(is_int($iD) || ctype_digit($iD))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($iD, true), gettype($iD)), __LINE__);
+        }
+        $this->ID = $iD;
+        return $this;
+    }
+    /**
+     * Get OrgID value
+     * @return int
+     */
+    public function getOrgID()
+    {
+        return $this->OrgID;
+    }
+    /**
+     * Set OrgID value
+     * @param int $orgID
+     * @return \StructType\MenuPage
+     */
+    public function setOrgID($orgID = null)
+    {
+        // validation for constraint: int
+        if (!is_null($orgID) && !(is_int($orgID) || ctype_digit($orgID))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($orgID, true), gettype($orgID)), __LINE__);
+        }
+        $this->OrgID = $orgID;
+        return $this;
+    }
+    /**
+     * Get PageID value
+     * @return int
+     */
+    public function getPageID()
+    {
+        return $this->PageID;
+    }
+    /**
+     * Set PageID value
+     * @param int $pageID
+     * @return \StructType\MenuPage
+     */
+    public function setPageID($pageID = null)
+    {
+        // validation for constraint: int
+        if (!is_null($pageID) && !(is_int($pageID) || ctype_digit($pageID))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($pageID, true), gettype($pageID)), __LINE__);
+        }
+        $this->PageID = $pageID;
+        return $this;
+    }
+    /**
+     * Get Status value
+     * @return int
+     */
+    public function getStatus()
+    {
+        return $this->Status;
+    }
+    /**
+     * Set Status value
+     * @param int $status
+     * @return \StructType\MenuPage
+     */
+    public function setStatus($status = null)
+    {
+        // validation for constraint: int
+        if (!is_null($status) && !(is_int($status) || ctype_digit($status))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($status, true), gettype($status)), __LINE__);
+        }
+        $this->Status = $status;
+        return $this;
+    }
+    /**
+     * Get DateCreated value
+     * @return string
+     */
+    public function getDateCreated()
+    {
+        return $this->DateCreated;
+    }
+    /**
+     * Set DateCreated value
+     * @param string $dateCreated
+     * @return \StructType\MenuPage
+     */
+    public function setDateCreated($dateCreated = null)
+    {
+        // validation for constraint: string
+        if (!is_null($dateCreated) && !is_string($dateCreated)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($dateCreated, true), gettype($dateCreated)), __LINE__);
+        }
+        $this->DateCreated = $dateCreated;
+        return $this;
+    }
+    /**
+     * Get DateModified value
+     * @return string
+     */
+    public function getDateModified()
+    {
+        return $this->DateModified;
+    }
+    /**
+     * Set DateModified value
+     * @param string $dateModified
+     * @return \StructType\MenuPage
+     */
+    public function setDateModified($dateModified = null)
+    {
+        // validation for constraint: string
+        if (!is_null($dateModified) && !is_string($dateModified)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($dateModified, true), gettype($dateModified)), __LINE__);
+        }
+        $this->DateModified = $dateModified;
+        return $this;
+    }
+    /**
+     * Get InitiatorID value
+     * @return int
+     */
+    public function getInitiatorID()
+    {
+        return $this->InitiatorID;
+    }
+    /**
+     * Set InitiatorID value
+     * @param int $initiatorID
+     * @return \StructType\MenuPage
+     */
+    public function setInitiatorID($initiatorID = null)
+    {
+        // validation for constraint: int
+        if (!is_null($initiatorID) && !(is_int($initiatorID) || ctype_digit($initiatorID))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($initiatorID, true), gettype($initiatorID)), __LINE__);
+        }
+        $this->InitiatorID = $initiatorID;
+        return $this;
+    }
+    /**
+     * Get VerifierID value
+     * @return int
+     */
+    public function getVerifierID()
+    {
+        return $this->VerifierID;
+    }
+    /**
+     * Set VerifierID value
+     * @param int $verifierID
+     * @return \StructType\MenuPage
+     */
+    public function setVerifierID($verifierID = null)
+    {
+        // validation for constraint: int
+        if (!is_null($verifierID) && !(is_int($verifierID) || ctype_digit($verifierID))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($verifierID, true), gettype($verifierID)), __LINE__);
+        }
+        $this->VerifierID = $verifierID;
+        return $this;
+    }
+    /**
+     * Get VerifiedDate value
+     * @return string
+     */
+    public function getVerifiedDate()
+    {
+        return $this->VerifiedDate;
+    }
+    /**
+     * Set VerifiedDate value
+     * @param string $verifiedDate
+     * @return \StructType\MenuPage
+     */
+    public function setVerifiedDate($verifiedDate = null)
+    {
+        // validation for constraint: string
+        if (!is_null($verifiedDate) && !is_string($verifiedDate)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($verifiedDate, true), gettype($verifiedDate)), __LINE__);
+        }
+        $this->VerifiedDate = $verifiedDate;
+        return $this;
+    }
+    /**
+     * Get MoveNext value
+     * @return bool
+     */
+    public function getMoveNext()
+    {
+        return $this->MoveNext;
+    }
+    /**
+     * Set MoveNext value
+     * @param bool $moveNext
+     * @return \StructType\MenuPage
+     */
+    public function setMoveNext($moveNext = null)
+    {
+        // validation for constraint: boolean
+        if (!is_null($moveNext) && !is_bool($moveNext)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($moveNext, true), gettype($moveNext)), __LINE__);
+        }
+        $this->MoveNext = $moveNext;
+        return $this;
+    }
+    /**
+     * Get NextApproverUserID value
+     * @return int
+     */
+    public function getNextApproverUserID()
+    {
+        return $this->NextApproverUserID;
+    }
+    /**
+     * Set NextApproverUserID value
+     * @param int $nextApproverUserID
+     * @return \StructType\MenuPage
+     */
+    public function setNextApproverUserID($nextApproverUserID = null)
+    {
+        // validation for constraint: int
+        if (!is_null($nextApproverUserID) && !(is_int($nextApproverUserID) || ctype_digit($nextApproverUserID))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($nextApproverUserID, true), gettype($nextApproverUserID)), __LINE__);
+        }
+        $this->NextApproverUserID = $nextApproverUserID;
+        return $this;
+    }
+    /**
+     * Get NextApproverRoleID value
+     * @return int
+     */
+    public function getNextApproverRoleID()
+    {
+        return $this->NextApproverRoleID;
+    }
+    /**
+     * Set NextApproverRoleID value
+     * @param int $nextApproverRoleID
+     * @return \StructType\MenuPage
+     */
+    public function setNextApproverRoleID($nextApproverRoleID = null)
+    {
+        // validation for constraint: int
+        if (!is_null($nextApproverRoleID) && !(is_int($nextApproverRoleID) || ctype_digit($nextApproverRoleID))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($nextApproverRoleID, true), gettype($nextApproverRoleID)), __LINE__);
+        }
+        $this->NextApproverRoleID = $nextApproverRoleID;
+        return $this;
+    }
+    /**
+     * Get WorkFlowTransactionID value
+     * @return int
+     */
+    public function getWorkFlowTransactionID()
+    {
+        return $this->WorkFlowTransactionID;
+    }
+    /**
+     * Set WorkFlowTransactionID value
+     * @param int $workFlowTransactionID
+     * @return \StructType\MenuPage
+     */
+    public function setWorkFlowTransactionID($workFlowTransactionID = null)
+    {
+        // validation for constraint: int
+        if (!is_null($workFlowTransactionID) && !(is_int($workFlowTransactionID) || ctype_digit($workFlowTransactionID))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($workFlowTransactionID, true), gettype($workFlowTransactionID)), __LINE__);
+        }
+        $this->WorkFlowTransactionID = $workFlowTransactionID;
+        return $this;
+    }
+    /**
+     * Get CreatedBy value
+     * @return string|null
+     */
+    public function getCreatedBy()
+    {
+        return $this->CreatedBy;
+    }
+    /**
+     * Set CreatedBy value
+     * @param string $createdBy
+     * @return \StructType\MenuPage
+     */
+    public function setCreatedBy($createdBy = null)
+    {
+        // validation for constraint: string
+        if (!is_null($createdBy) && !is_string($createdBy)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($createdBy, true), gettype($createdBy)), __LINE__);
+        }
+        $this->CreatedBy = $createdBy;
+        return $this;
+    }
+    /**
+     * Get ModifiedBy value
+     * @return string|null
+     */
+    public function getModifiedBy()
+    {
+        return $this->ModifiedBy;
+    }
+    /**
+     * Set ModifiedBy value
+     * @param string $modifiedBy
+     * @return \StructType\MenuPage
+     */
+    public function setModifiedBy($modifiedBy = null)
+    {
+        // validation for constraint: string
+        if (!is_null($modifiedBy) && !is_string($modifiedBy)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($modifiedBy, true), gettype($modifiedBy)), __LINE__);
+        }
+        $this->ModifiedBy = $modifiedBy;
+        return $this;
+    }
+    /**
+     * Get WorkFlowTransactionIDs value
+     * @return string|null
+     */
+    public function getWorkFlowTransactionIDs()
+    {
+        return $this->WorkFlowTransactionIDs;
+    }
+    /**
+     * Set WorkFlowTransactionIDs value
+     * @param string $workFlowTransactionIDs
+     * @return \StructType\MenuPage
+     */
+    public function setWorkFlowTransactionIDs($workFlowTransactionIDs = null)
+    {
+        // validation for constraint: string
+        if (!is_null($workFlowTransactionIDs) && !is_string($workFlowTransactionIDs)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($workFlowTransactionIDs, true), gettype($workFlowTransactionIDs)), __LINE__);
+        }
+        $this->WorkFlowTransactionIDs = $workFlowTransactionIDs;
+        return $this;
+    }
+    /**
+     * Get RoleMenuPages value
+     * @return \ArrayType\ArrayOfRoleMenuPage|null
+     */
+    public function getRoleMenuPages()
+    {
+        return $this->RoleMenuPages;
+    }
+    /**
+     * Set RoleMenuPages value
+     * @param \ArrayType\ArrayOfRoleMenuPage $roleMenuPages
+     * @return \StructType\MenuPage
+     */
+    public function setRoleMenuPages(\ArrayType\ArrayOfRoleMenuPage $roleMenuPages = null)
+    {
+        $this->RoleMenuPages = $roleMenuPages;
+        return $this;
+    }
+    /**
+     * Get Organisation value
+     * @return \StructType\Organisation|null
+     */
+    public function getOrganisation()
+    {
+        return $this->Organisation;
+    }
+    /**
+     * Set Organisation value
+     * @param \StructType\Organisation $organisation
+     * @return \StructType\MenuPage
+     */
+    public function setOrganisation(\StructType\Organisation $organisation = null)
+    {
+        $this->Organisation = $organisation;
+        return $this;
+    }
+    /**
+     * Get Page value
+     * @return \StructType\Page|null
+     */
+    public function getPage()
+    {
+        return $this->Page;
+    }
+    /**
+     * Set Page value
+     * @param \StructType\Page $page
+     * @return \StructType\MenuPage
+     */
+    public function setPage(\StructType\Page $page = null)
+    {
+        $this->Page = $page;
+        return $this;
+    }
+    /**
+     * Get MenuPages value
+     * @return \ArrayType\ArrayOfMenuPage|null
+     */
+    public function getMenuPages()
+    {
+        return $this->MenuPages;
+    }
+    /**
+     * Set MenuPages value
+     * @param \ArrayType\ArrayOfMenuPage $menuPages
+     * @return \StructType\MenuPage
+     */
+    public function setMenuPages(\ArrayType\ArrayOfMenuPage $menuPages = null)
+    {
+        $this->MenuPages = $menuPages;
+        return $this;
+    }
+    /**
+     * Method called when an object has been exported with var_export() functions
+     * It allows to return an object instantiated with the values
+     * @see AbstractStructBase::__set_state()
+     * @uses AbstractStructBase::__set_state()
+     * @param array $array the exported values
+     * @return \StructType\MenuPage
+     */
+    public static function __set_state(array $array)
+    {
+        return parent::__set_state($array);
+    }
+    /**
+     * Method returning the class name
+     * @return string __CLASS__
+     */
+    public function __toString()
+    {
+        return __CLASS__;
+    }
+}

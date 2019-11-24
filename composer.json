@@ -1,0 +1,15 @@
+{
+    "name": "first_pay_wsdl/firstpaysdk",
+    "description": "Package generated from http://localhost/firstpay_integration/public/FapxConnect.xml using wsdltophp/packagegenerator",
+    "require": {
+        "php": ">=5.3.3",
+        "ext-soap": "*",
+        "ext-mbstring": "*",
+        "wsdltophp/packagebase": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "./src\\"
+        }
+    }
+}
